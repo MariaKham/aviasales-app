@@ -1,0 +1,12 @@
+body {
+    background-color: $body-color;
+    font-family: $font;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@import './variables.scss'
