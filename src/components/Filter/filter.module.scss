@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .filters {
     width: 232px;
     height: 252px;
@@ -6,6 +8,10 @@
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     color: $font-black;
+    @media (max-width: 880px) {
+        flex-direction: column;
+        margin: auto;
+    }
 
     &__title {
         margin: 0;
@@ -35,6 +41,7 @@
 
     &__label {
         padding-left: 2.5em;
+        cursor: pointer;
     }
 
     &__input {
@@ -56,4 +63,3 @@
 }
 
 
-@import '../../assets/styles/variables.scss'

@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .tickets-list {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
       font-size: 12px;
       line-height: 20px;
       letter-spacing: 0.5px;
+      cursor: pointer;
     }
   }
 
-@import '../../assets/styles/variables.scss'

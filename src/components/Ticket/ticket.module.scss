@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .tickets-list-item {
     background-color: $font-white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,4 +46,3 @@
       line-height: 21px;
     }
   }
-@import '../../assets/styles/variables.scss'
