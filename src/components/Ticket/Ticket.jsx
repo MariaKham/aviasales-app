@@ -1,24 +1,8 @@
-// import React from 'react'
-import { format, add } from 'date-fns'
+import { flightDuration, flightTime, stopsName } from '../../utils/utils'
 
 import classes from './ticket.module.scss'
 
 function Ticket({ data }) {
-  const flightTime = (time, duration) => {
-    const departure = format(new Date(time), 'HH:mm')
-    const arrival = format(add(new Date(time), { minutes: duration }), 'HH:mm')
-    return `${departure} - ${arrival}`
-  }
-
-  const flightDuration = (duration) => {
-    const hours = Math.trunc(duration / 60)
-    let minutes = duration - hours * 60
-    minutes = minutes < 10 ? `0${minutes}` : minutes
-    return `${hours}ч ${minutes}м`
-  }
-
-  const stopsName = (num) => (num === 1 ? ' пересадка' : ' пересадки')
-
   const ticketSegments = data.segments.map((seg, idx) => (
     <div key={idx} className={classes['tickets-list-item__segment']}>
       <div className={classes['tickets-list-item__col']}>
